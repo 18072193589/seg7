@@ -14,7 +14,6 @@ class ResnetGenerator(nn.Module):
         self.n_blocks = n_blocks
         self.img_size = img_size
         self.light = light
-        self.te=1
         DownBlock = []
         DownBlock += [nn.ReflectionPad2d(3),
                       nn.Conv2d(input_nc, ngf, kernel_size=7, stride=1, padding=0, bias=False),
