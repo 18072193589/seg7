@@ -12,7 +12,7 @@ def parse_args():
     #减小所需的显存
     parser.add_argument('--dataset', type=str, default='heidelberg_to_topcon', help='dataset_name')
 
-    parser.add_argument('--iteration', type=int, default=100000, help='The number of training iterations')
+    parser.add_argument('--iteration', type=int, default=10000, help='The number of training iterations')
     parser.add_argument('--batch_size', type=int, default=16, help='The size of batch size')
     parser.add_argument('--print_freq', type=int, default=1, help='The number of image print freq')
     parser.add_argument('--save_freq', type=int, default=100000, help='The number of model save freq')
